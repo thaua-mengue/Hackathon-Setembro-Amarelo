@@ -4,7 +4,7 @@
       Campanha de Prevenção ao Suidicio
     </h2>
 
-    <v-for v-for="(list, index) of this.list" :key="index">
+    <v-for v-for="(list, index) of content" :key="index">
       <Card
         :title="list.name"
         :text="list.descricao"
@@ -12,7 +12,6 @@
         :subtitle="list.link"
       />
     </v-for>
-    <button @click="content">JSOn</button>
   </v-container>
 </template>
 
@@ -31,17 +30,13 @@ export default {
     };
   },
 
-  methods: {
+  computed: {
     content() {
       let categoria;
-      //let elementoGoverno;
-
       let elemento = this.Campanha.map((element) => {
         categoria = element.categoria;
 
-        const find = categoria.find(
-          (element) => element === "Atendimento Presencial"
-        );
+        const find = categoria.find((element) => element === "Campanha");
 
         if (find) {
           this.list.push(element);
