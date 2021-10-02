@@ -63,7 +63,7 @@
               <v-list-item-icon>
                 <v-icon>mdi-cellphone-information</v-icon>
               </v-list-item-icon>
-              <v-list-item-title>Atendimento Presencial</v-list-item-title>
+              <v-list-item-title>Conteúdo Informativo</v-list-item-title>
             </v-list-item>
           </router-link>
         </v-list-item-group>
