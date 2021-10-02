@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <h2 class="text-h5 text-center mb-3 mt-5">
-      Onde encontrar atendimento Onlin
+      Onde encontrar Atendimento Online
     </h2>
 
     <Card
