@@ -8,7 +8,7 @@
 
     <v-card-actions>
       <v-btn color="orange lighten-2" text :href="subtitle" target="_blank">
-        Saiba mais
+        Acesse o link
       </v-btn>
 
       <v-spacer></v-spacer>
