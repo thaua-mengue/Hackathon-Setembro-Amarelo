@@ -28,6 +28,11 @@ const routes = [
     name: 'CampanhaPrevencao',
     component: CampanhaPrevencao
   }
+  {
+    path: '/AtendPresencial',
+    name: 'AtendPresencial',
+    component: AtendPresencial
+  }
 ]
 
 const router = new VueRouter({
