@@ -3,18 +3,17 @@
     <h2 class="text-h5 text-center mb-3 mt-5">
       Conteúdo Informativo
     </h2>
-    
-      <v-for v-for="(list, index) of ContInformativo" :key="index">
+
+    <v-for v-for="(list, index) of ContInformativo" :key="index">
       <div class="mb-3 mt-5">
-      <Card
-        :title="list.nome"
-        :text="list.descricao"
-        :url="list.imagem"
-        :subtitle="list.link"
-      />
+        <Card
+          :title="list.nome"
+          :text="list.descricao"
+          :url="list.imagem"
+          :subtitle="list.link"
+        />
       </div>
     </v-for>
-    
   </v-container>
 </template>
 
