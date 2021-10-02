@@ -4,7 +4,9 @@ import Home from '../views/Home.vue'
 import IndicacaoProfissionais from '../views/IndicacaoProfissionais'
 import CampanhaPrevencao from '../views/CampanhaPrevencao'
 import AtendPresencial from '../views/AtendPresencial'
+import AtendimentoOnline from '../views/AtendimentoOnline'
 
+import ContInformativo from '../views/ContInformativo'
 Vue.use(VueRouter)
 
 const routes = [
@@ -21,12 +23,22 @@ const routes = [
   {
     path: '/campanha',
     name: 'CampanhaPrevencao',
-    component: CampanhaPrevencao
+    component: CampanhaPrevencao,
   },
   {
     path: '/AtendPresencial',
     name: 'AtendPresencial',
     component: AtendPresencial,
+  },
+  {
+    path: '/AtendimentoOnline',
+    name: 'AtendimentoOnline',
+    component: AtendimentoOnline,
+  },
+  {
+    path: '/ContInformativo',
+    name: 'ContInformativo',
+    component: ContInformativo
   },
 ]
 

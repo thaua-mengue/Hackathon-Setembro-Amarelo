@@ -1,19 +1,16 @@
 <template>
   <v-container>
-    <h2 class="text-h5 text-center mb-3 mt-5">
+    <h2 class="text-h5 text-center mb-5 mt-5">
       Conteúdo Informativo
     </h2>
-
-    <v-for v-for="(list, index) of ContInformativo" :key="index">
-      <div class="mb-3 mt-5">
-        <Card
-          :title="list.nome"
-          :text="list.descricao"
-          :url="list.imagem"
-          :subtitle="list.link"
-        />
-      </div>
-    </v-for>
+    <div v-for="(list, index) of this.list" :key="index">
+      <Card
+        :title="list.name"
+        :text="list.descricao"
+        :url="list.imagem"
+        :subtitle="list.link"
+      />
+    </div>
   </v-container>
 </template>
 
@@ -31,37 +28,32 @@ export default {
       list: [],
     };
   },
-  /*
+
   computed: {
     content() {
       let categoria;
       let elemento = this.ContInformativo.map((element) => {
         categoria = element.categoria;
-
-        const find = categoria.find(
-          (element) => element === "Conteúdo Informativo"
-        );
-
+        const find = categoria.find((element) => element === "Conteúdo informativo");
         if (find) {
           this.list.push(element);
         }
       });
-
       elemento = this.list;
       console.log(elemento);
       return elemento;
     },
   },
-  */
   created() {
     fetch("https://it3zxc-default-rtdb.firebaseio.com/setembroamarelo.json")
       .then((response) => (this.ContInformativo = response.json()))
       .then((json) => {
         this.ContInformativo = json;
-        // console.log(this.Campanha);
+        this.content();
       });
   },
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+</style>
