@@ -42,6 +42,22 @@
               <v-list-item-title>Indicação de Profissinais</v-list-item-title>
             </v-list-item>
           </router-link>
+          <router-link to="/AtendimentoOnline">
+            <v-list-item>
+              <v-list-item-icon>
+                <v-icon>mdi-home</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>Atendimetno Online</v-list-item-title>
+            </v-list-item>
+          </router-link>
+          <router-link to="/AtendPresencial">
+            <v-list-item>
+              <v-list-item-icon>
+                <v-icon>mdi-home</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>Atendimento Presencial</v-list-item-title>
+            </v-list-item>
+          </router-link>
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
@@ -59,11 +75,10 @@ export default {
 </script>
 
 <style scoped>
-.app-top-bar a { 
-     text-decoration: none;
-     }
+.app-top-bar a {
+  text-decoration: none;
+}
 .title {
   color: #f9a825;
-
 }
 </style>
