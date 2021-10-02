@@ -16,7 +16,7 @@
         </v-card-title>
 
         <v-card-subtitle>
-          1,000 miles of wonder
+          {{ atend.tipo }}
         </v-card-subtitle>
 
         <v-card-actions>
@@ -61,7 +61,6 @@ export default {
         this.listaAtendPres = json;
       });
   },
-  
 };
 </script>
 
