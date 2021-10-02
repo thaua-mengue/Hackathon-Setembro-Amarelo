@@ -26,6 +26,22 @@
               <v-list-item-title>Início</v-list-item-title>
             </v-list-item>
           </router-link>
+          <router-link to="/campanha">
+            <v-list-item>
+              <v-list-item-icon>
+                <v-icon>mdi-home</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>Campanha de Prevenção</v-list-item-title>
+            </v-list-item>
+          </router-link>
+          <router-link to="/Profissinais">
+            <v-list-item>
+              <v-list-item-icon>
+                <v-icon>mdi-home</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>Indicação de Profissinais</v-list-item-title>
+            </v-list-item>
+          </router-link>
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
