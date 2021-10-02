@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <h2 class="text-h5 text-center mb-3 mt-5">
-      Indicação de Profissionais
+      Atendimento Presencial
     </h2>
     <div
       class="containercard mb-3 mt-3"

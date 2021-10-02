@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <h2 class="text-h5 text-center mb-3 mt-5">
-      Indicação de Profissionais
+      Conteúdo Informativo
     </h2>
     <div
       class="containercard mb-3 mt-3"
@@ -21,7 +21,7 @@
 
         <v-card-actions>
           <v-btn color="orange lighten-2" text :href="atend.link">
-            Acesse o site
+            Leia mais
           </v-btn>
 
           <v-spacer></v-spacer>
@@ -47,7 +47,7 @@
 
 <script>
 export default {
-  name: "AtendPresencial",
+  name: "ContInformativo",
   data() {
     return {
       listaAtendPres: [],

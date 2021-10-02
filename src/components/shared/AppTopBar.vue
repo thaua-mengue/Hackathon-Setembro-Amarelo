@@ -11,6 +11,13 @@
       />
 
       <v-toolbar-title class="title"> Ano Amarelo </v-toolbar-title>
+       <v-spacer></v-spacer>
+
+      <v-btn icon a href="https://www.cvv.org.br/">
+        <v-icon>mdi-cellphone</v-icon>
+      </v-btn>
+
+    
     </v-app-bar>
     <v-navigation-drawer color="#FFFDE7" v-model="drawer" absolute temporary>
       <v-list nav dense>
@@ -29,7 +36,7 @@
           <router-link to="/campanha">
             <v-list-item>
               <v-list-item-icon>
-                <v-icon>mdi-home</v-icon>
+                <v-icon>mdi-heart</v-icon>
               </v-list-item-icon>
               <v-list-item-title>Campanha de Prevenção</v-list-item-title>
             </v-list-item>
@@ -37,9 +44,33 @@
           <router-link to="/Profissinais">
             <v-list-item>
               <v-list-item-icon>
-                <v-icon>mdi-home</v-icon>
+                <v-icon>mdi-doctor</v-icon>
               </v-list-item-icon>
-              <v-list-item-title>Indicação de Profissinais</v-list-item-title>
+              <v-list-item-title>Indicação de Profissionais</v-list-item-title>
+            </v-list-item>
+          </router-link>
+          <router-link to="/AtendimentoOnline">
+            <v-list-item>
+              <v-list-item-icon>
+                <v-icon>mdi-laptop</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>Atendimento Online</v-list-item-title>
+            </v-list-item>
+          </router-link>
+          <router-link to="/AtendPresencial">
+            <v-list-item>
+              <v-list-item-icon>
+                <v-icon>mdi-hospital-building</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>Atendimento Presencial</v-list-item-title>
+            </v-list-item>
+          </router-link>
+          <router-link to="/ContInformativo">
+            <v-list-item>
+              <v-list-item-icon>
+                <v-icon>mdi-cellphone-information</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>Conteúdo Informativo</v-list-item-title>
             </v-list-item>
           </router-link>
         </v-list-item-group>
@@ -59,11 +90,10 @@ export default {
 </script>
 
 <style scoped>
-.app-top-bar a { 
-     text-decoration: none;
-     }
+.app-top-bar a {
+  text-decoration: none;
+}
 .title {
   color: #f9a825;
-
 }
 </style>
