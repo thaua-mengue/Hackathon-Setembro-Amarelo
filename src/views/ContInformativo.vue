@@ -1,24 +1,24 @@
+/* eslint-disable no-irregular-whitespace */
 <template>
   <v-container>
     <h2 class="text-h5 text-center mb-5 mt-5">Conteúdo Informativo</h2>
-
-    <p>
-      Aqui voce encontra a entrevista com a psicologa Ana Arantes sobre o
-      suicidio.
-    </p>
-
     <div>
       <h4 class="text-h6 text-center mb-5 mt-5">
         Como começou a campanha do setembro amarelo?
       </h4>
-
       <p>
-        Em 1994, um jovem americano de apenas 17 anos, chamado Mike Emme, tirou
+        No ano de 1994, um jovem americano de apenas 17 anos, chamado Mike Emme, tirou
         a própria vida em seu Mustang 1968 amarelo. Seus amigos e familiares
         distribuíram no funeral cartões com fitas amarelas e mensagens de apoio
         para pessoas que estivessem enfrentando o mesmo desespero de Mike, e a
         mensagem foi se espalhando mundo afora.
       </p>
+    <h3 class="text-center mb-5 mt-5">Informações adicionais:</h3>
+    <p>
+      Aqui voce encontra a entrevista com a psicóloga Ana Arantes sobre o
+      suicídio.
+    </p>
+
     </div>
     <div v-for="(list, index) of this.list" :key="index">
       <Card

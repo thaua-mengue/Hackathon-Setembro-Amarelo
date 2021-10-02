@@ -21,12 +21,6 @@
     </v-card-subtitle>
 
     <v-card-actions>
-      <v-btn
-        color="orange lighten-2"
-        text
-      >
-        LEIA MAIS
-      </v-btn>
 
       <v-spacer></v-spacer>
 
