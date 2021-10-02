@@ -1,16 +1,16 @@
 <template>
   <v-container>
-    <h2 class="text-h5 text-center mb-3 mt-5">
+    <h2 class="text-h5 text-center mb-5 mt-5">
       Indicação de Profissionais
     </h2>
-    <v-for v-for="(list, index) of content" :key="index">
+    <div v-for="(list, index) of this.list" :key="index">
       <Card
         :title="list.name"
         :text="list.descricao"
         :url="list.imagem"
         :subtitle="list.link"
       />
-    </v-for>
+    </div>
   </v-container>
 </template>
 
@@ -49,6 +49,7 @@ export default {
       .then((response) => (this.Profissionais = response.json()))
       .then((json) => {
         this.Profissionais = json;
+        this.content();
       });
   },
 };
