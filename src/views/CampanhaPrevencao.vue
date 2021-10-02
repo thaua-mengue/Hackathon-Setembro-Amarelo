@@ -4,12 +4,15 @@
       Campanha de Prevenção ao Suidicio
     </h2>
 
-    <Card
-      title="Titulo"
-      url="https://gntech.med.br/pub/media/wysiwyg/Capa_-_BLOG_01.png"
-      text="Informações"
-      subtitle="Subtitle"
-    />
+    <v-for v-for="(list, index) of this.list" :key="index">
+      <Card
+        :title="list.name"
+        :text="list.descricao"
+        :url="list.imagem"
+        :subtitle="list.link"
+      />
+    </v-for>
+    <button @click="content">JSOn</button>
   </v-container>
 </template>
 
@@ -24,15 +27,38 @@ export default {
     return {
       Campanha: [],
       show: false,
+      list: [],
     };
   },
-  computed: {},
+
+  methods: {
+    content() {
+      let categoria;
+      //let elementoGoverno;
+
+      let elemento = this.Campanha.map((element) => {
+        categoria = element.categoria;
+
+        const find = categoria.find(
+          (element) => element === "Atendimento Presencial"
+        );
+
+        if (find) {
+          this.list.push(element);
+        }
+      });
+
+      elemento = this.list;
+      console.log(elemento);
+      return elemento;
+    },
+  },
   created() {
     fetch("https://it3zxc-default-rtdb.firebaseio.com/setembroamarelo.json")
-      .then((response) => response.json())
+      .then((response) => (this.Campanha = response.json()))
       .then((json) => {
-        this.campanha = json;
-        console.log(this.campanha);
+        this.Campanha = json;
+        // console.log(this.Campanha);
       });
   },
 };
