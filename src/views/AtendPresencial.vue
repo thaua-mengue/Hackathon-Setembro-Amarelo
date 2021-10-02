@@ -61,6 +61,7 @@ export default {
         this.listaAtendPres = json;
       });
   },
+  
 };
 </script>
 
