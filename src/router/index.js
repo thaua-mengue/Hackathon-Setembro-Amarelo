@@ -5,6 +5,7 @@ import IndicacaoProfissinais from "../views/IndicacaoProfissinais";
 import CampanhaPrevencao from "../views/CampanhaPrevencao";
 import AtendimentoOnline from "../views/AtendimentoOnline";
 import AtendPresencial from "../views/AtendPresencial";
+import ContInformativo from "../views/ContInformativo";
 
 Vue.use(VueRouter);
 
@@ -34,6 +35,11 @@ const routes = [
     name: "AtendPresencial",
     component: AtendPresencial,
   },
+  {
+    path: "/ContInformativo",
+    name: "ContInformativo",
+    component: ContInformativo,
+  }
 ];
 
 const router = new VueRouter({
