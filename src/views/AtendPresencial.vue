@@ -3,9 +3,13 @@
     <h2 class="text-h5 text-center mb-3 mt-5">
       Atendimento Presencial
     </h2>
-    <div class="containercard" v-for="atend of listaAtendPres" :key="atend.id">
+    <div
+      class="containercard mb-3 mt-3"
+      v-for="atend of listaAtendPres"
+      :key="atend.id"
+    >
       <v-card class="mx-auto" max-width="344">
-        <v-img src="atend.imagem" height="200px"></v-img>
+        <v-img :src="atend.imagem" height="200px"></v-img>
 
         <v-card-title>
           {{ atend.nome }}
@@ -17,7 +21,7 @@
 
         <v-card-actions>
           <v-btn color="orange lighten-2" text>
-            Explore
+            Leia mais
           </v-btn>
 
           <v-spacer></v-spacer>
