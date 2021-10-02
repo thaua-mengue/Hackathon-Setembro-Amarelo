@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import IndicacaoProfissinais from '../views/IndicacaoProfissinais'
-import Campanha from '../views/Campanha'
+import CampanhaPrevencao from '../views/CampanhaPrevencao'
 Vue.use(VueRouter)
 
 const routes = [
@@ -17,9 +17,9 @@ const routes = [
     component: IndicacaoProfissinais
   },
   {
-    path: 'Campanha',
-    name: 'Campanha',
-    component: Campanha
+    path: '/campanha',
+    name: 'CampanhaPrevencao',
+    component: CampanhaPrevencao
   }
 ]
 
