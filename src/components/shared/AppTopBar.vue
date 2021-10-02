@@ -11,15 +11,13 @@
       />
 
       <v-toolbar-title class="title"> Ano Amarelo </v-toolbar-title>
-       <v-spacer></v-spacer>
+      <v-spacer></v-spacer>
 
       <v-btn icon a href="https://www.cvv.org.br/">
         <v-icon>mdi-cellphone</v-icon>
       </v-btn>
-
-    
     </v-app-bar>
-    <v-navigation-drawer color="#FFFDE7" v-model="drawer" absolute temporary>
+    <v-navigation-drawer color="#FFFDE7" v-model="drawer" fixed temporary>
       <v-list nav dense>
         <v-list-item-group
           v-model="group"
@@ -93,6 +91,7 @@ export default {
 .app-top-bar a {
   text-decoration: none;
 }
+
 .title {
   color: #f9a825;
 }
