@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import IndicacaoProfissionais from '../views/IndicacaoProfissionais'
 import CampanhaPrevencao from '../views/CampanhaPrevencao'
+import AtendPresencial from '../views/AtendPresencial'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -20,7 +22,12 @@ const routes = [
     path: '/campanha',
     name: 'CampanhaPrevencao',
     component: CampanhaPrevencao
-  }
+  },
+  {
+    path: '/AtendPresencial',
+    name: 'AtendPresencial',
+    component: AtendPresencial,
+  },
 ]
 
 const router = new VueRouter({
