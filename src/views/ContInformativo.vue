@@ -3,62 +3,62 @@
     <h2 class="text-h5 text-center mb-3 mt-5">
       Conteúdo Informativo
     </h2>
-    <div
-      class="containercard mb-3 mt-3"
-      v-for="atend of listaAtendPres"
-      :key="atend.id"
-    >
-      <v-card class="mx-auto" max-width="344">
-        <v-img :src="atend.imagem" height="200px"></v-img>
 
-        <v-card-title>
-          {{ atend.nome }}
-        </v-card-title>
-
-        <v-card-subtitle>
-          {{ atend.tipo }}
-        </v-card-subtitle>
-
-        <v-card-actions>
-          <v-btn color="orange lighten-2" text :href="atend.link">
-            Leia mais
-          </v-btn>
-
-          <v-spacer></v-spacer>
-
-          <v-btn icon @click="show = !show">
-            <v-icon>{{ show ? "mdi-chevron-up" : "mdi-chevron-down" }}</v-icon>
-          </v-btn>
-        </v-card-actions>
-
-        <v-expand-transition>
-          <div v-show="show">
-            <v-divider></v-divider>
-
-            <v-card-text>
-              {{ atend.descricao }}
-            </v-card-text>
-          </div>
-        </v-expand-transition>
-      </v-card>
-    </div>
+    <v-for v-for="(list, index) of ContInformativo" :key="index">
+      <div class="mb-3 mt-5">
+        <Card
+          :title="list.nome"
+          :text="list.descricao"
+          :url="list.imagem"
+          :subtitle="list.link"
+        />
+      </div>
+    </v-for>
   </v-container>
 </template>
 
 <script>
+import Card from "../components/generic/Card.vue";
 export default {
   name: "ContInformativo",
+  components: {
+    Card,
+  },
   data() {
     return {
-      listaAtendPres: [],
+      ContInformativo: [],
       show: false,
+      list: [],
     };
   },
+  /*
+  computed: {
+    content() {
+      let categoria;
+      let elemento = this.ContInformativo.map((element) => {
+        categoria = element.categoria;
+
+        const find = categoria.find(
+          (element) => element === "Conteúdo Informativo"
+        );
+
+        if (find) {
+          this.list.push(element);
+        }
+      });
+
+      elemento = this.list;
+      console.log(elemento);
+      return elemento;
+    },
+  },
+  */
   created() {
     fetch("https://it3zxc-default-rtdb.firebaseio.com/setembroamarelo.json")
-      .then((resposta) => resposta.json())
+      .then((response) => (this.ContInformativo = response.json()))
       .then((json) => {
-        this.listaAtendPres = json;
+        this.ContInformativo = json;
+        // console.log(this.Campanha);
       });
   },
 };

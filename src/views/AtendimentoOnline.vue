@@ -5,10 +5,10 @@
     </h2>
     <p>Podemos tambem te oferecer ajuda online durante o ano inteiro através dos links abaixo.</p>
     <Card
-      title="Titulo"
-      url="https://gntech.med.br/pub/media/wysiwyg/Capa_-_BLOG_01.png"
-      text="Informações"
-      subtitle="Subtitle"
+      title="Atendimento Online"
+      url="https://crpmt.org.br//storage/news/large/15506992815c6dcb110b1a8.jpg"
+      text="Os atendimentos funcionam através de vídeo-consultas, podendo contar com o apoio de e-mail chat. Há algum tempo percebemos o crescimento das discussões sobre terapia online. Discute-se sobre os potenciais resultados, desafios, regulamentação e capacitação dos psicólogos para o atendimento online."
+      subtitle="Saiba mais"
     />
   </v-container>
 </template>
@@ -40,8 +40,5 @@ export default {
 </script>
 
 <style scoped>
-  .AtendimentoOnline-color {
-      color: aqua;
- 
-}
+
 </style>

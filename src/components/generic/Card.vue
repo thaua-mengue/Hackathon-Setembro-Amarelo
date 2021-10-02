@@ -7,7 +7,9 @@
     <v-card-subtitle> {{ subtitle }} </v-card-subtitle>
 
     <v-card-actions>
-      <v-btn color="orange lighten-2" text> Link </v-btn>
+      <v-btn color="orange lighten-2" text :href="subtitle" target="_blank">
+        Acesse o link
+      </v-btn>
 
       <v-spacer></v-spacer>
 
@@ -43,5 +45,4 @@ export default {
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
