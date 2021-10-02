@@ -39,7 +39,7 @@
            Com o objetivo de prevenir e reduzir estes números a campanha Setembro Amarelo® cresceu e hoje conquistamos o Brasil inteiro. Para isso, o apoio das nossas federadas, núcleos, associados e de toda a sociedade é fundamental.
            Como resultado de muito esforço, em 2016, garantimos espaços inéditos na imprensa e firmamos muitas parcerias. Conseguimos também iluminar monumentos históricos, pontos turísticos, pela primeira vez o Cristo Redentor, espaços públicos e privados no Brasil inteiro. Centenas de pessoas participaram de caminhadas e ações para a conscientização sobre este importante tema.
            Esta é uma página completa com material disponível para auxiliar a todos. Assim sendo, aproveite os nossos materiais e participe da nossa campanha durante todo o ano.
-           São diversos materiais de uso público: Diretrizes para a Divulgação e Participação da Campanha Setembro Amarelo®, materiais online para download, a <a href="http://www.flip3d.com.br/web/pub/cfm/index9/?numero=14">Cartilha Suicídio Informando para Prevenir</a> e todo o material para a imprensa.
+           São diversos materiais de uso público: <a href="https://portal.cfm.org.br/wp-content/uploads/2021/09/setembroamarelo_diretrizes.pdf">Diretrizes para a Divulgação e Participação da Campanha Setembro Amarelo®</a>, materiais online para download, a <a href="http://www.flip3d.com.br/web/pub/cfm/index9/?numero=14">Cartilha Suicídio Informando para Prevenir</a> e todo o material para a imprensa.
            Participe conosco, divulgue a campanha entre os seus amigos e nos ajude a salvar vidas!
         </v-card-text>
       </div>
