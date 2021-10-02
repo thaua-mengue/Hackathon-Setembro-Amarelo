@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import IndicacaoProfissinais from '../views/IndicacaoProfissinais'
 import CampanhaPrevencao from '../views/CampanhaPrevencao'
+import AtendimentoOnline from '../views/AtendimentoOnline'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -15,6 +17,11 @@ const routes = [
     path: '/Profissinais',
     name: 'IndicacaoProfissinais',
     component: IndicacaoProfissinais
+  },
+  {
+    path: '/AtendimentoOnline',
+    name: 'AtendimentoOnline',
+    component: AtendimentoOnline
   },
   {
     path: '/campanha',
