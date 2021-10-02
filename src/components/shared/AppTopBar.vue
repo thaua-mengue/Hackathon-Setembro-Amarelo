@@ -41,7 +41,7 @@
               <v-list-item-title>Campanha de Prevenção</v-list-item-title>
             </v-list-item>
           </router-link>
-          <router-link to="/Profissinais">
+          <router-link to="/Profissionais">
             <v-list-item>
               <v-list-item-icon>
                 <v-icon>mdi-doctor</v-icon>
