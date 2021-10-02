@@ -40,7 +40,6 @@ export default {
         }
       });
       elemento = this.list;
-      console.log(elemento);
       return elemento;
     },
   },
