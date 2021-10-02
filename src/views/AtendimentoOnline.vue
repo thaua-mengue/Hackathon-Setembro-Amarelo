@@ -3,7 +3,7 @@
     <h2 class="text-h5 text-center mb-3 mt-5">
       Onde encontrar Atendimento Online
     </h2>
-
+    <p>Podemos tambem te oferecer ajuda online durante o ano inteiro através dos links abaixo.</p>
     <Card
       title="Titulo"
       url="https://gntech.med.br/pub/media/wysiwyg/Capa_-_BLOG_01.png"
