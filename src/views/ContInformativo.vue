@@ -3,6 +3,7 @@
     <h2 class="text-h5 text-center mb-5 mt-5">
       Conteúdo Informativo
     </h2>
+    <p>Aqui voce encontra a entrevista com a psicologa Ana Arantes sobre o suicidio. </p>
     <div v-for="(list, index) of this.list" :key="index">
       <Card
         :title="list.name"
