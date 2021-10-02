@@ -20,7 +20,7 @@
         </v-card-subtitle>
 
         <v-card-actions>
-          <v-btn color="orange lighten-2" text>
+          <v-btn color="orange lighten-2" text :href="atend.link">
             Leia mais
           </v-btn>
 
