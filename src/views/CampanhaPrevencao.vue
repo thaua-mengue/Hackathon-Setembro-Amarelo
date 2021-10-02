@@ -4,14 +4,14 @@
       Campanha de Prevenção ao Suidicio
     </h2>
 
-    <v-for v-for="(list, index) of content" :key="index">
+    <div v-for="(list, index) of this.list" :key="index">
       <Card
-        :title="list.name"
+        :title="list.nome"
         :text="list.descricao"
         :url="list.imagem"
         :subtitle="list.link"
       />
-    </v-for>
+    </div>
   </v-container>
 </template>
 
@@ -30,30 +30,33 @@ export default {
     };
   },
 
-  computed: {
+  methods: {
     content() {
-      let categoria;
-      let elemento = this.Campanha.map((element) => {
-        categoria = element.categoria;
+      if (this.Campanha) {
+        let categoria;
+        let elemento = this.Campanha.map((element) => {
+          categoria = element.categoria;
 
-        const find = categoria.find((element) => element === "Campanha");
+          const find = categoria.find((element) => element === "Campanha");
 
-        if (find) {
-          this.list.push(element);
-        }
-      });
+          if (find) {
+            this.list.push(element);
+          }
+        });
 
-      elemento = this.list;
-      console.log(elemento);
-      return elemento;
+        elemento = this.list;
+
+        return elemento;
+      }
     },
   },
+
   created() {
     fetch("https://it3zxc-default-rtdb.firebaseio.com/setembroamarelo.json")
       .then((response) => (this.Campanha = response.json()))
       .then((json) => {
         this.Campanha = json;
-        // console.log(this.Campanha);
+        this.content();
       });
   },
 };
