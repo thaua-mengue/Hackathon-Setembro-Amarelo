@@ -4,8 +4,8 @@
       Onde encontrar Atendimento Online
     </h2>
     <p>
-      Podemos tambem te oferecer ajuda online durante o ano inteiro através dos
-      links abaixo.
+      Podemos também te oferecer ajuda online durante o ano inteiro através dos
+      links abaixo:
     </p>
     <div v-for="(list, index) of this.list" :key="index">
       <Card

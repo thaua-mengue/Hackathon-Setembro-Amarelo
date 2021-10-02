@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <h2 class="text-h5 text-center mb-3 mt-5">Atendimento Presencial</h2>
-    <p>Você tambem pode encontrar ajuda presencial nos links abaixo:</p>
+    <p>Você também pode encontrar ajuda presencial nos links abaixo:</p>
 
     <div v-for="(list, index) of this.list" :key="index">
       <Card
