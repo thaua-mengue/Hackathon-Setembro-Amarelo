@@ -3,7 +3,7 @@
     <h2 class="text-h5 text-center mb-3 mt-5">
       Campanha de Prevenção ao Suidicio
     </h2>
-  <p>Nos links abaixo você encontra conteudo informativo sobre a campanha stembro amarelo</p>
+  <p>Nos links abaixo você encontra conteudo informativo sobre a campanha setembro amarelo:</p>
     <div v-for="(list, index) of this.list" :key="index">
       <Card
         :title="list.nome"

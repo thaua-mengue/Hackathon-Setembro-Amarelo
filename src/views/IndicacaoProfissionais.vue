@@ -3,7 +3,7 @@
     <h2 class="text-h5 text-center mb-5 mt-5">
       Indicação de Profissionais
     </h2>
-    <p>Precisando de ajuda profisisonal ?  temos algumas indicações de onde conseguir ajuda</p>
+    <p>Precurando por profissionais qualificados ?  temos algumas indicações de onde conseguir ajuda:</p>
     <div v-for="(list, index) of this.list" :key="index">
       <Card
         :title="list.name"
