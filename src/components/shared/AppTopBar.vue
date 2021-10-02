@@ -16,7 +16,7 @@
       <v-list nav dense>
         <v-list-item-group
           v-model="group"
-          active-class="yellow--text text--lighten-2"
+          active-class="yellow--text text--accent-4"
         >
           <router-link to="/">
             <v-list-item>
@@ -59,7 +59,11 @@ export default {
 </script>
 
 <style scoped>
+.app-top-bar a { 
+     text-decoration: none;
+     }
 .title {
   color: #f9a825;
+
 }
 </style>
