@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <h2 class="text-h5 text-center mb-3 mt-5">
-      Onde encontrar atendimento online?
+      Onde encontrar atendimento Onlin
     </h2>
 
     <Card
@@ -16,6 +16,7 @@
 <script>
 import Card from "../components/generic/Card.vue";
 export default {
+    
   name: "CampanhaPrevencao",
   components: {
     Card,
@@ -39,4 +40,8 @@ export default {
 </script>
 
 <style scoped>
+  .AtendimentoOnline-color {
+      color: aqua;
+ 
+}
 </style>

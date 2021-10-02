@@ -29,7 +29,7 @@
           <router-link to="/campanha">
             <v-list-item>
               <v-list-item-icon>
-                <v-icon>mdi-home</v-icon>
+                <v-icon>mdi-heart</v-icon>
               </v-list-item-icon>
               <v-list-item-title>Campanha de Prevenção</v-list-item-title>
             </v-list-item>
@@ -37,7 +37,7 @@
           <router-link to="/Profissinais">
             <v-list-item>
               <v-list-item-icon>
-                <v-icon>mdi-home</v-icon>
+                <v-icon>mdi-doctor</v-icon>
               </v-list-item-icon>
               <v-list-item-title>Indicação de Profissionais</v-list-item-title>
             </v-list-item>
@@ -45,7 +45,7 @@
           <router-link to="/AtendimentoOnline">
             <v-list-item>
               <v-list-item-icon>
-                <v-icon>mdi-home</v-icon>
+                <v-icon>mdi-laptop</v-icon>
               </v-list-item-icon>
               <v-list-item-title>Atendimento Online</v-list-item-title>
             </v-list-item>
@@ -53,7 +53,7 @@
           <router-link to="/AtendPresencial">
             <v-list-item>
               <v-list-item-icon>
-                <v-icon>mdi-home</v-icon>
+                <v-icon>mdi-hospital-building</v-icon>
               </v-list-item-icon>
               <v-list-item-title>Atendimento Presencial</v-list-item-title>
             </v-list-item>
@@ -61,7 +61,7 @@
           <router-link to="/ContInformativo">
             <v-list-item>
               <v-list-item-icon>
-                <v-icon>mdi-home</v-icon>
+                <v-icon>mdi-cellphone-information</v-icon>
               </v-list-item-icon>
               <v-list-item-title>Atendimento Presencial</v-list-item-title>
             </v-list-item>
